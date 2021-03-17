@@ -7,7 +7,7 @@ import (
 
 var errReadingInput = errors.New("Error reading input")
 
-func TakeTemperature(msg string, value *float64) {
+func TakeFloat(msg string, value *float64) {
 	fmt.Println(msg)
 	_, err := fmt.Scanln(value)
 	if err != nil {
@@ -15,7 +15,7 @@ func TakeTemperature(msg string, value *float64) {
 	}
 }
 
-func TakeUnite(msg string, value *string) {
+func TakeString(msg string, value *string) {
 	fmt.Println(msg)
 	_, err := fmt.Scanln(value)
 	if err != nil {
